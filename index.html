@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TopUp test callback</title>
+</head>
+<body>
+    <h1>TopUp test callback</h1>
+
+    <script type='text/javascript'>
+        try {
+            Native('appCallback', JSON.stringify('success'));
+        }
+        catch (err) { }
+    </script>
+</body>
+</html>
