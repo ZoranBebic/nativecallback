@@ -15,6 +15,7 @@
             Native('appCallback', JSON.stringify('success'));
         }
         catch (err) {
+            console.log(err);
             document.getElementById('error').innerText=JSON.stringify(err);
         }
     </script>
