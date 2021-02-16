@@ -7,12 +7,16 @@
 </head>
 <body>
     <h1>TopUp test callback</h1>
+    <div id="error">
 
+    </div>
     <script type='text/javascript'>
         try {
-            Native('appCallback', 'success');
+            Native('appCallback', JSON.stringify('success'));
         }
-        catch (err) { }
+        catch (err) {
+            document.getElementById('error').innerText(JSON.stringify(err));
+        }
     </script>
 </body>
 </html>
