@@ -12,7 +12,7 @@
     </div>
     <script type='text/javascript'>
         try {
-            Native('appCallback', 'success');
+            setTimeout(function() {Native('appCallback', 'success');}, 3000);
         }
         catch (err) {
             console.log(err);
